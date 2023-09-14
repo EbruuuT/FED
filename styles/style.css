@@ -2,7 +2,7 @@
 /* CSS REMEDY */
 /**************/
 *, *::after, *::before {
-  box-sizing:border-box;  
+	box-sizing:border-box;  
 }
 
 
@@ -20,7 +20,17 @@
 }
 
 
+header {
+	background-color: yellow;
+}
 
+main {
+	background-color: grey;
+}
+
+footer {
+	background-color: yellow;
+}
 
 
 /****************/
