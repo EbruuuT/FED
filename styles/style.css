@@ -17,20 +17,11 @@
 	/* startje */
 	--color-text:#111;
 	--color-background:#eee;
+	--color-headfoot: rgb(245, 191, 14); 
+	--color-background: grey;
+	--color-plattetext: rgb(240, 238, 238); 
 }
 
-
-header {
-	background-color: yellow;
-}
-
-main {
-	background-color: grey;
-}
-
-footer {
-	background-color: yellow;
-}
 
 
 /****************/
@@ -39,3 +30,48 @@ footer {
 
 /* jouw code */
 
+p {
+	color: var(--color-plattetext);
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+	background-color: var(--color-headfoot)
+}
+
+main {
+	background-image: radial-gradient(circle, #5b5b5b 0%, #191a1a 100%);
+	
+}
+
+footer {
+	background-color: var(--color-headfoot)
+}
+
+ul, li {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	/* om de toegevoegde spacering en styling te verwijderen */
+}
+
+nav ul {
+	display: flex;
+
+}
+
+nav li {
+	margin: auto;
+}
+
+section {
+	display: flex;
+	overflow-x: scroll;
+}
+
+article img {
+	width: 100%;
+	height: auto%;
+	display: flex;
+	overflow-x: scroll;
+}

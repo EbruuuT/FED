@@ -99,10 +99,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   | student 1      | student 2          | student 3    | student 4        | Student 5     |
   | Marina         | Max                | Ebru         | Niels            | Robin         |
-  | Wilt vragen    | Heeft een vraag    | Ik heb een   |                  | Gaat vragen   |
-  | stellen over   | over het mondeling | vraag over   |                  | stellen over  |
+  | Wilt vragen    | Heeft een vraag    | Ik heb een   | Vraag over het   | Gaat vragen   |
+  | stellen over   | over het mondeling.| vraag over   | invulformulier.  | stellen over  |
   | haar html of   |                    | mijn Html of |                  | de header en  |
-  | het clean is   |                    | het goed is. |                  | responsiveness|            
+  | het clean is   |                    | het goed is. |                  |responsiveness.|            
   | en of alles op |                                                       
   | het juiste plek|
   | staat.         |
@@ -111,10 +111,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Logo als heading 1 gebruiken.
+  - Gradiant kleur fixen in CSS. 
+  - Voor invulformulier is het handig om label te gebruiken.
 
 </details>
 
@@ -134,12 +133,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
+  | student 1      | student 2          | student 3     | student 4        | Student 5        |
+  | Marina         | Max                | Ebru          | Niels            | Robin            |
+  | Heeft persoon- | Heeft geen vraag.  | Ik heb een    | heeft een vraag  | Heeft geen vraag.|
+  | lijke vragen   |                    | vraag of het  | over ...         |                  |
+  |                |                    | duidelijk is  |                  |                  |
+  |                |                    | dat je op een |
+                                        | film kan      |
+                                        | klikken.      |                             
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
