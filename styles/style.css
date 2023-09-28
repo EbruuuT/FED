@@ -16,10 +16,12 @@
 :root {
 	/* startje */
 	--color-text:#111;
-	--color-background:#eee;
+	--color-wit:#eee;
 	--color-headfoot: rgb(245, 191, 14); 
 	--color-background: grey;
 	--color-plattetext: rgb(240, 238, 238); 
+	--color-ticket-film: rgb(249, 188, 67);
+	--color-hover: rgb(245, 112, 11);
 }
 
 
@@ -30,22 +32,26 @@
 
 /* jouw code */
 
-p {
-	color: var(--color-plattetext);
-	font-family: Arial, Helvetica, sans-serif;
-}
 
+
+/* Header */
 header {
-	background-color: var(--color-headfoot)
+	background-color: var(--color-headfoot);
+	display: flex;
+	flex-wrap: wrap;
 }
 
-main {
-	background-image: radial-gradient(circle, #5b5b5b 0%, #191a1a 100%);
-	
+header nav {
+	flex-grow: 1;
 }
 
-footer {
-	background-color: var(--color-headfoot)
+nav ul {
+	display: flex;
+}
+
+nav li {
+	margin: auto;
+	flex-grow: 1;
 }
 
 ul, li {
@@ -55,23 +61,135 @@ ul, li {
 	/* om de toegevoegde spacering en styling te verwijderen */
 }
 
-nav ul {
-	display: flex;
+
+
+
+
+/* section 1 */
+section:nth-of-type(1) {
+	max-width: 100%;
+	height: auto;
+	padding: 20px;
+	gap: 20px;
+}
+
+span {
+	position: relative;
+	background-color: var(--color-ticket-film);
+	padding: 10px;
+	bottom: 30px;
+}
+
+span:hover {
+	background-color: var(--color-hover);
+}
+
+
+
+
+
+/* section 2 */
+section:nth-of-type(2) {
+	max-width: 100%;
+	height: auto;
+	gap: 20px;
 
 }
 
-nav li {
-	margin: auto;
+section:nth-of-type(2) article img, section:nth-of-type(2) article {
+	margin-left: 20px;
+	width: 20em;
+	height: auto;
 }
 
-section {
+
+
+
+
+
+/* section 3 */
+section:nth-of-type(3) {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1em;
+}
+
+section :nth-last-of-type(3) article h2 {
+	margin-top: 2em;
+}
+
+
+
+
+
+/* meerdere selecties */
+section:nth-of-type(1), section:nth-of-type(2) div {
 	display: flex;
 	overflow-x: scroll;
+	
 }
 
-article img {
-	width: 100%;
-	height: auto%;
-	display: flex;
-	overflow-x: scroll;
+article a img {
+	width: auto;
+	height: 20vh;
 }
+
+article p {
+	background-color: var(--color-wit);
+	color: var(--color-text);
+	position: relative;
+	bottom: 30px;
+	padding: 10px;
+	max-width: auto;
+}
+
+section a img {
+	width: auto;
+	height: 50vh;
+}
+
+
+
+
+/* body */
+p {
+	color: var(--color-plattetext);
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+	background-image: radial-gradient(circle, #5b5b5b 0%, #191a1a 100%);
+}
+
+h2 {
+	color: var(--color-wit);
+}
+
+
+
+
+
+/* footer */
+footer {
+	background-color: var(--color-headfoot)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
