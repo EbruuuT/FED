@@ -14,17 +14,32 @@
 			<a href="index.html">Films</a>
 			<a href="index.html">Tijden</a>
 			<a href="index.html">Bioscopen</a>
+            <a  href="detail.html"> <img class="anders" src="images/menuicon.png" alt=""></a>
 		</nav>
-        <img src="images/barbiefilm.jpg" alt="barbiefilm"> 
-    
+        <video controls autoplay muted src="images/barbietrailer.mp4"></video> 
     </header>
 
 
     <main>
+        <section>                
+            <h2>Barbie film</h2>
+            <img src="images/barbiefilm.jpg" alt="barbiefilm"> 
+            <article>   
+
+                <img src="images/rating.png" alt="">
+                <p>144 min</p>
+                <p>Engels, Nederlands</p>
+                <img src="images/kijkwijzer.png" alt="">
+                <img src="images/kijkwijzerfear.png" alt="">
+                <img src="images/kijkwijzerscream.png" alt="">
+                <p>Komedie</p>
+                <p>IMAX</p>
+            </article>
+        </section>
+
         <section>
-            <article>    
-                <video controls autoplay muted src="images/barbietrailer.mp4"></video>
-                <h2>Barbie film</h2>
+            <article>
+                <h3>Samenvatting</h3>
                     <p>In Barbieland is alles en iedereen perfect. Behalve als je een 
                     existentiële crisis hebt. Of als je een Ken bent.</p>
 
@@ -36,19 +51,34 @@
                     <p>Barbie is een film van de voor een Oscar genomineerde schrijver/regisseur 
                     Greta Gerwig, met in de hoofdrollen de voor een Oscar genomineerde 
                     acteurs Margot Robbie en Ryan Gosling als Barbie en Ken.</p>
-            </article>
-        </section>
 
+                    <img src="images/ken.jpg" alt="ken">
+                    <button>Click me</button>
+                    <audio id="kensong" src="images/kensong.mp3"></audio>
+            </article>
+
+        </section>
 
         <section>
             <h3>Tijden en tickets</h3>
+                <input type="date">
+                <label for="Tijd">Kies je tijd</label>
+                <select name="Tijd" id="Tijd">
+                    <option value="13:00">13:00</option>
+                    <option value="14:00">14:00</option>
+                    <option value="15:00">15:00</option>
+                    <option value="16:00">16:00</option>
+                </select>
+                <!-- https://www.w3schools.com/tags/tag_select.asp -->
+                <button>Bestel</button>
         </section>
     </main>
     <footer>
-        <a href="detail.html"><img src="images/twittericon.png" width="35px" alt="twitter"></a>
-        <a href="detail.html"><img src="images/facebookicon.png" width="35px" alt="facebook"></a>
-        <a href="detail.html"><img src="images/newig.png" width="35px" alt="instagram"></a>
-        <a href="detail.html"><img src="images/tiktokicon.png" width="35px" alt="tiktok"></a>
+        <a href="detail.html"><img src="images/twittericon.png"  alt="twitter"></a>
+        <a href="detail.html"><img src="images/facebookicon.png"  alt="facebook"></a>
+        <a href="detail.html"><img src="images/newig.png"  alt="instagram"></a>
+        <a href="detail.html"><img src="images/tiktokicon.png"  alt="tiktok"></a>
     </footer>
+    <script defer src="scripts/script.js"></script>
 </body>
 </html>

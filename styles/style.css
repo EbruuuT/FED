@@ -23,7 +23,36 @@
 	--color-ticket-film: rgb(249, 188, 67);
 	--color-hover: rgb(245, 112, 11);
 	--color-theme: hotpink;
+	--gradient-theme: radial-gradient(circle, #f81272 0%, #ff75b3 100%);
+	--gradient-home: radial-gradient(circle, #5b5b5b 0%, #191a1a 100%);
+	--color-hover: orange;
+	--button-anders: green; 
+	--color-topfoot: rgb(245, 7, 134);
+	--color-hovertheme: rgb(169, 14, 84);
 }
+
+@media (prefers-color-scheme: dark) {
+    :root {
+		--color-text:#ffffff;
+		--color-wit:#000000;
+		--color-headfoot: rgb(245, 191, 14); 
+		--color-background: grey;
+		--color-plattetext: rgb(240, 238, 238); 
+		--color-ticket-film: rgb(249, 188, 67);
+		--color-hover: rgb(245, 112, 11);
+		--color-theme: rgb(255, 134, 70);
+		--gradient-theme: radial-gradient(circle, #f86605 0%, #fcbc8b 100%);
+		--gradient-home: radial-gradient(circle, #a07d7d 0%, #a3a4a4 100%);
+		--color-hover: orange;
+		--button-anders: rgb(102, 22, 114); 
+		--color-topfoot: rgb(219, 122, 42);
+		--color-hovertheme: rgb(195, 72, 32);
+	
+    }
+}
+
+
+
 
 html {
 	max-width: 390px;
@@ -36,11 +65,11 @@ body {
 }
 p {
 	color: var(--color-plattetext);
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: Arial, Helvetica, sans-serif;	
 }
 
 main {
-	background-image: radial-gradient(circle, #5b5b5b 0%, #191a1a 100%);
+	background-image: var(--gradient-home)
 }
 
 h2 {
@@ -58,31 +87,41 @@ h2 {
 /* Header */
 header {
 	background-color: var(--color-headfoot);
+}
+
+header img {
+	width: 2em;
+}
+
+nav {
 	display: flex;
-	flex-wrap: wrap;
-	
+	justify-content: center;
+	gap: 1em;
 }
 
-header nav {
-	flex-grow: 1;
+nav a {
+	text-decoration: none;
+	color: var(--color-wit);
 }
 
-nav ul {
-	display: flex;
+nav a:nth-of-type(2), nav a:nth-of-type(3), nav a:nth-of-type(4) {
+	padding: 5px;
+	position: relative;
+	top: 1em;
+	width: auto;
+	height: 2em;
 }
 
-nav li {
-	margin: auto;
-	flex-grow: 1;
+nav a:nth-of-type(5) {
+	position: relative;
+	top: 1em;
+	width: 4em;
+	height: auto;
 }
 
-ul, li {
-	list-style-type: none;
-	padding: 0;
-	margin: 0;
-	/* om de toegevoegde spacering en styling te verwijderen */
+nav a:hover {
+	background-color: var(--color-hover);
 }
-
 
 
 
@@ -126,6 +165,18 @@ div {
 	gap: 1em;
 }
 
+section:nth-of-type(2) article {
+	background-color: var(--color-wit);
+	position: relative;
+	margin-top: 0;
+	max-width: auto;
+}
+
+section:nth-of-type(2) article p {
+	color: var(--color-text);
+	padding: 0 1em ;
+}
+
 
 
 
@@ -135,11 +186,30 @@ section:nth-of-type(3) {
 	gap: 1em;
 	margin-left: 1em;
 	flex-direction: column;
+	animation-duration: 8s;
+	animation-name: slidein;   
+	animation-direction: alternate;
 }
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations */
+
+
 
 section :nth-last-of-type(3) article h2 {
 	margin-top: 2em;
 }
+
 
 section:nth-of-type(3) article {
 	padding: 20px;
@@ -167,20 +237,10 @@ article a img {
 	display: block;
 }
 
-section:nth-of-type(1) article p, section:nth-of-type(2) article p {
-	background-color: var(--color-wit);
-	color: var(--color-text);
-	position: relative;
-	margin-top: 0;
-	padding: 10px;
-	max-width: auto;
-}
-
 section a img {
 	width: auto;
 	height: 50vh;
 }
-
 
 img {
 	display: block;
@@ -188,16 +248,13 @@ img {
 
 
 
-
 /* footer */
 footer {
-	background-color: var(--color-headfoot)
+	background-color: var(--color-headfoot);
+	display: flex;
+	justify-content: space-around;
+	padding: 2em;
 }
-
-
-
-
-
 
 
 
@@ -209,46 +266,145 @@ footer {
 
 
 
-/* body */
-.pagina2 {
-	background-color: rgb(188, 188, 220);
-	all: unset;
+.pagina2 main {
+background-image: var(--gradient-theme); 
 }
-
-
 
 
 /* header */
-
 .pagina2 nav {
-	background-color: rgb(245, 7, 134);
+	background-color: var(--color-topfoot);
 }
 
-.pagina2 header img {
-	max-width: 100%;
+.pagina2 img {
+	width: 50%;
 	height: auto;
+}
+
+.pagina2 header {
+	background-color: var(--color-theme);
+}
+
+.pagina2 h2 {
+	margin: 0;
 }
 
 
 
 
 /* section 1 */
-
 .pagina2 video {
 	max-width: 100%;
+	height: auto;
 
 }
 
-.pagina2 p {
-	background-color: transparent;
+
+
+
+.pagina2 section:nth-of-type(2) article  {
+	background: none;
+
 }
-
-
-
-
 
 /* section 2 */
 .pagina2 h3 {
 color: var(--color-wit);
 }
 
+
+
+
+
+
+.pagina2 section:nth-of-type(1) {
+	display: flex;
+	flex-wrap: wrap;
+	
+}
+
+.pagina2 section:nth-of-type(1) article {
+	width: calc(50% - 20px);
+	/* Hiermee calculeert ie met de width van mijn foto en de padding. Zo kunnen mijn andere content naast de foto komen te staan.  */
+}
+
+.pagina2 section article img:nth-of-type(3), section article img:nth-of-type(4), section article img:nth-of-type(2) {
+	width: 2em;
+	display: inline;
+}
+
+.pagina2 section:nth-of-type(1) h2 {
+	flex-basis: 100%;
+}
+
+.pagina2 section article img:nth-of-type(1) {
+	width: 100%;
+
+}
+
+
+.pagina2 section:nth-of-type(2) article p  {
+	color: var(--color-wit);
+}
+
+.pagina2 section:nth-of-type(3) input {
+	width: 50%;	
+	padding: 1em;
+}
+
+.pagina2 section:nth-of-type(3) select {
+	width: 50%;
+	padding: 1em;	
+}
+
+.pagina2 section:nth-of-type(3) label {
+	color: var(--color-wit);
+}
+
+
+
+
+.pagina2 nav a:nth-of-type(5) {
+	position: relative;
+	top: 1em;
+	width: 4em;
+	height: auto;
+}
+
+.pagina2 nav {
+	display: flex;
+	justify-content: center;
+	gap: 1em
+}
+
+.pagina2 nav a:hover {
+	background-color: var(--color-hovertheme);
+}
+
+
+
+.pagina2 footer {
+	background-color: var(--color-topfoot);
+	display: flex;
+	justify-content: space-around;
+}
+
+.pagina2 footer a {
+width: 4em;	
+}
+
+
+
+.pagina2 section:nth-of-type(2) button {
+	padding: 1em;
+
+}
+
+.pagina2 section:nth-of-type(3) button {
+	width: 50%;
+	padding: 1em;
+}
+
+.pagina2 section:nth-of-type(3) button.anders {
+	background-color: var(--button-anders);
+}

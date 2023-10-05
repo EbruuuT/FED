@@ -21,8 +21,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   #### Je startniveau:
   Blauw piste
   #### Je focus:
-  Responsive
- 
+  Surface Plane
+
 </details>
 
 
@@ -92,6 +92,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  
+  1. Het schrijven van HTML van mijn 1e pagina ging makkelijk. Ik had alleen probleem hoe ik het moest indelen. 
 
 
   ### Agenda voor meeting
@@ -128,6 +130,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  1. Ik vond het beetje moeite mee met mijn layout. Het was niet hoe ik het wilde.
 
 
   ### Agenda voor meeting
@@ -135,20 +138,16 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   | student 1      | student 2          | student 3     | student 4        | Student 5        |
   | Marina         | Max                | Ebru          | Niels            | Robin            |
-  | Heeft persoon- | Heeft geen vraag.  | Ik heb een    | heeft een vraag  | Heeft geen vraag.|
+  | Heeft persoon- | Heeft geen vraag.  | Ik heb een    | heeft een vraag  | Was niet aanwezig|
   | lijke vragen   |                    | vraag of het  | over ...         |                  |
   |                |                    | duidelijk is  |                  |                  |
   |                |                    | dat je op een |
-                                        | film kan      |
-                                        | klikken.      |                             
+  |                |                    | film kan      |
+  |                |                    | klikken.      |                             
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - Het is nog niet duidelijk dat je erop kan klikken (als je een film kiest). Dus ik kan hierbij een button toevoegen of een (a)
 
 </details>
 
@@ -163,7 +162,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
-
+  1. Ik heb de headings gefixed.
+  2. Ik heb een video die afspeelt, maar begint zonder geluid. Hierdoor schrikken mensen niet.
+  3. Alt tekst is toegevoegd, waar het nodig is
+  <img src="images/bevinding1.jpg" width="375px" alt="bevindingen">
+  <img src="images/bevinding2.jpg" width="375px" alt="bevindingen">
+  <img src="images/bevinding3.jpg" width="375px" alt="bevindingen">
+  <img src="images/bevinding4.jpg" width="375px" alt="bevindingen">
+  <img src="images/bevinding5.jpg" width="375px" alt="bevindingen">
 </details>
 
 
@@ -177,16 +183,20 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+  1. Ik ben ver gekomen met mijn 1e pagina. Alleen de layout nog fixen en mijn top nav en mijn footer. Moet nog wel veel voor mijn 2e pagina doen. 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | student 1      | student 2          | student 3     | student 4          |Student 5         |
+  | Marina         | Max                | Ebru          | Niels              | Robin            |
+  | Heeft persoon- | Heeft persoonlijke | Ik heb een    | heeft persoonlijke | Was niet aanwezig|
+  | lijke vragen   | vraag              | vraag of mijn | vraag              |                  |
+  |                |                    | html goed is  |                    |                  |
+  |                |                    |               |                    |
+  |                |                    |               |                    |
+  |                |                    |               |  
+  |                |                    |               |               
 
 
   ### Verslag van meeting
@@ -209,18 +219,22 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="images/Screenshot 3.png" width="375px" alt="uitkomst opdracht 1">
+  <img src="images/Screenshot 4.png" width="375px" alt="uitkomst opdracht 1">
+  <img src="images/Screenshot5.png.png" width="375px" alt="uitkomst opdracht 1">
+  <img src="images/Screenshot6.png.png" width="375px" alt="uitkomst opdracht 1">
+
+
 
 
   ### Dit ging goed/Heb ik geleerd: 
   Korte omschrijving met plaatjes
-
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
-
+  1. Mijn eerste pagina verliep over het algemeen vrij soepel. Ik ben tevreden over de lay-out en de manier waarop ik de elementen heb georganiseerd. Tijdens het proces heb ik geleerd hoe ik de :root-selector in CSS moet gebruiken, wat erg handig bleek te zijn voor het implementeren van zowel de donkere als lichte modus, die ik uiteindelijk heb toegevoegd. Daarnaast heb ik ook geleerd hoe ik de nth-type-selector moet toepassen, terwijl ik normaal gesproken direct een class zou gebruiken.
 
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes
-
+  1. Het coderen is over het algemeen een uitdaging voor mij. Het kost me veel moeite en tijd om nieuwe concepten te leren en ze toe te passen. Ik merk dat ik vaak vastloop op bepaalde punten en snel in de war raak, waardoor ik het overzicht verlies. Hoewel ik vaak leuke ideeën heb, besef ik dat mijn huidige vaardigheden niet voldoende zijn om ze te realiseren. Een voorbeeld hiervan is mijn poging om een volledig werkend hamburgermenu te maken. Ik heb het geprobeerd, maar vanwege tijdsbeperkingen heb ik besloten om ermee te stoppen. Ik heb ook een tutorial gevolgd, maar begreep niet volledig wat er precies gebeurde.
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>
 
@@ -237,8 +251,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. https://www.w3schools.com/tags/tag_select.asp
+  2. https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations
+  3. Dlo
+  4. Mede studenten
 
 </details>
