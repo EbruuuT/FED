@@ -235,7 +235,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="images/Screenshot6.png.png" width="375px" alt="uitkomst opdracht 1">
 
  ### Je uitkomst - karakteristiek screenshots nieuwe versie:
-  <img src="images/nieuweversie.png" width="375px" alt="uitkomst opdracht 1">
+  <img src="images/nieuweversie.png" width="375px" alt="herkansing">
   <img src="images/2.png" width="375px" alt="uitkomst herkansing">
   <img src="images/3.png" width="375px" alt="uitkomst herkansing">
   <img src="images/4.png" width="375px" alt="uitkomst herkansing">
