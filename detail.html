@@ -10,13 +10,22 @@
 <body class="pagina2">
     <header>
 		<nav>
-			<a href="index.html"><h1><img src="images/logo.png" width="50px" alt=""></h1></a>
+			<a href="index.html"><h1><img src="images/logo.png" ></h1></a>
 			<a href="index.html">Films</a>
 			<a href="index.html">Tijden</a>
 			<a href="index.html">Bioscopen</a>
-            <a  href="detail.html"> <img class="anders" src="images/menuicon.png" alt=""></a>
+            <button class="menu"><img src="images/menuicon.png" alt="ButtonMenu"></button>
 		</nav>
-        <video controls autoplay muted src="images/barbietrailer.mp4"></video> 
+
+        <nav class="hamburgermenu"> 
+			<p>Club Pathé</p>
+			<p>IMAX</p>
+			<p>4DX</p>
+			<a href="detail.html">Dolby Cinema</a>
+		</nav>
+
+
+        <video controls autoplay muted src="images/barbietrailer-kleinebestand.mp4"></video> 
     </header>
 
 
@@ -26,12 +35,12 @@
             <img src="images/barbiefilm.jpg" alt="barbiefilm"> 
             <article>   
 
-                <img src="images/rating.png" alt="">
+                <img src="images/newfavicon.png" alt="Sterren reviews">
                 <p>144 min</p>
                 <p>Engels, Nederlands</p>
-                <img src="images/kijkwijzer.png" alt="">
-                <img src="images/kijkwijzerfear.png" alt="">
-                <img src="images/kijkwijzerscream.png" alt="">
+                <img src="images/kijkwijzer.png" alt="Kijkwijzer 9 jaar">
+                <img src="images/kijkwijzerfear.png" alt="Kijkwijzer angst">
+                <img src="images/kijkwijzerscream.png" alt="Kijkwijzer grof taalgebruik">
                 <p>Komedie</p>
                 <p>IMAX</p>
             </article>
@@ -53,7 +62,7 @@
                     acteurs Margot Robbie en Ryan Gosling als Barbie en Ken.</p>
 
                     <img src="images/ken.jpg" alt="ken">
-                    <button>Click me</button>
+                    <button aria-label="Click me">Click me</button>
                     <audio id="kensong" src="images/kensong.mp3"></audio>
             </article>
 
@@ -70,7 +79,7 @@
                     <option value="16:00">16:00</option>
                 </select>
                 <!-- https://www.w3schools.com/tags/tag_select.asp -->
-                <button>Bestel</button>
+                <button aria-label="Bestel">Bestel</button>
         </section>
     </main>
     <footer>
